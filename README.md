@@ -1,19 +1,19 @@
-print('Stock Barang')
-print('1, Beras 5 kantong')
-print('2, Kopi 4 sachets')
-print('3, Kecap 3 botol')
-print('-------------------')
-print('1, Tambah stok')
-print('2, Kurangi stok')
+    print('Stock Barang')
+    print('1, Beras 5 kantong')
+    print('2, Kopi 4 sachets')
+    print('3, Kecap 3 botol')
+    print('-------------------')
+    print('1, Tambah stok')
+    print('2, Kurangi stok')
 
-# Harga barang
-harga_beras = 50000
-harga_kopi = 10000
-harga_kecap = 20000
+    # Harga barang
+    harga_beras = 50000
+    harga_kopi = 10000
+    harga_kecap = 20000
 
-pilihan1 = int(input('Pilih barang yang ingin diubah stoknya: '))
+    pilihan1 = int(input('Pilih barang yang ingin diubah stoknya: '))
 
-if pilihan1 == 1:
+    if pilihan1 == 1:
     print('Anda memilih Beras')
     pilihan2 = int(input('Mau tambah atau kurang stok? (1: Tambah / 2: Kurang): '))
 
@@ -31,7 +31,7 @@ if pilihan1 == 1:
         total_harga = beras * harga_beras
         print('Total harga beras:', total_harga)
 
-elif pilihan1 == 2:
+    elif pilihan1 == 2:
     print('Anda memilih Kopi')
     pilihan2 = int(input('Mau tambah atau kurang stok? (1: Tambah / 2: Kurang): '))
 
@@ -49,7 +49,7 @@ elif pilihan1 == 2:
         total_harga = kopi * harga_kopi
         print('Total harga kopi:', total_harga)
 
-elif pilihan1 == 3:
+    elif pilihan1 == 3:
     print('Anda memilih Kecap')
     pilihan2 = int(input('Mau tambah atau kurang stok? (1: Tambah / 2: Kurang): '))
 
