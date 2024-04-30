@@ -1,0 +1,45 @@
+print('WARUNG POJOK SARI')
+print('---------------------------------')
+print('1. Beras 4 kantong 45000/kantong')
+print('2. Kopi 6 sachet 12000/kantong')
+print('3. Kecap 5 sachet 10000/botol')
+print('---------------------------------')
+print('1. Penjualan')
+print('2. Stock Barang')
+pilihan = "po"
+while pilihan == "po":
+ pilieh = str(input('Kamu mau buka penjualan/stock barang?'))
+if pilieh == "penjualan" :
+    maka = str(input('Kamu mau jual barang apa?' ))
+    jumlah = int(input('Jumlahnya berapa? '))
+    if maka == "beras":
+      hasil = 45000*jumlah
+      print('total Rp.', hasil)
+    if maka == "kopi":
+      hasil = 12000*jumlah
+      print('total Rp.', hasil)
+    if maka == "kecap":
+      hasil = 10000*jumlah
+      print('total Rp.', hasil)
+if pilieh == "stock":
+    maka = str(input('Mau kamu kurang atau tambah dan barangnya apa? ex:tambah_beras : '))
+    jumlah1 = int(input('Jumlahnya berapa? '))
+    if maka == "tambah_beras":
+      hasil = 4+jumlah1
+      print('total', hasil, 'kantong')
+    if maka == "tambah_kopi":
+      hasil = 6+jumlah1
+      print('total', hasil, 'sachet')
+    if maka == "tambah_kecap":
+      hasil = 5+jumlah1
+      print('total', hasil, 'botol')
+    if maka == "kurang_beras":
+      hasil = 4-jumlah1
+      print('total', hasil, 'kantong')
+    if maka == "kurang_kopi":
+      hasil = 6-jumlah1
+      print('total', hasil, 'sachet')
+    if maka == "kurang_kecap":
+      hasil = 5-jumlah1
+      print('total', hasil, 'botol')
+print('-----------------------------')
