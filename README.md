@@ -6,7 +6,7 @@ print('-------------------')
 print('1, Tambah stok')
 print('2, Kurangi stok')
 
-# Harga barang
+ Harga barang
 harga_beras = 50000
 harga_kopi = 10000
 harga_kecap = 20000
