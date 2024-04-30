@@ -1,0 +1,86 @@
+# Menampilkan daftar barang dan stok awal
+print('Stock Barang')
+print('1, Beras - 5 kantong')
+print('2, Kopi - 4 sachets')
+print('3, Kecap - 3 botol')
+print('-------------------')
+print('1, Tambah Stok')
+print('2, Kurangi Stok')
+print('3, Penjualan Barang')
+
+# Menentukan pilihan
+pilihan1 = int(input('Pilih menu: '))
+
+# Melakukan operasi berdasarkan pilihan
+if pilihan1 == 1:
+  # Menu Tambah Stok
+  print('Menu Tambah Stok')
+  pilihan_barang = int(input('Pilih barang: (1: Beras, 2: Kopi, 3: Kecap) '))
+  if pilihan_barang == 1:
+    # Tambah stok beras
+    stok_awal_beras = 5
+    tambah_beras = int(input('Tambah berapa kantong beras? '))
+    stok_beras = stok_awal_beras + tambah_beras
+    print('Stok beras baru:', stok_beras, 'kantong')
+  elif pilihan_barang == 2:
+    # Tambah stok kopi
+    stok_awal_kopi = 4
+    tambah_kopi = int(input('Tambah berapa sachets kopi? '))
+    stok_kopi = stok_awal_kopi + tambah_kopi
+    print('Stok kopi baru:', stok_kopi, 'sachets')
+  elif pilihan_barang == 3:
+    # Tambah stok kecap
+    stok_awal_kecap = 3
+    tambah_kecap = int(input('Tambah berapa botol kecap? '))
+    stok_kecap = stok_awal_kecap + tambah_kecap
+    print('Stok kecap baru:', stok_kecap, 'botol')
+  else:
+    print('Pilihan barang tidak valid!')
+
+elif pilihan1 == 2:
+  # Menu Kurangi Stok
+  print('Menu Kurangi Stok')
+  pilihan_barang = int(input('Pilih barang: (1: Beras, 2: Kopi, 3: Kecap) '))
+  if pilihan_barang == 1:
+    # Kurangi stok beras
+    stok_awal_beras = 5
+    kurangi_beras = int(input('Kurangi berapa kantong beras? '))
+    if kurangi_beras > stok_awal_beras:
+      print('Stok beras tidak mencukupi!')
+    else:
+      stok_beras = stok_awal_beras - kurangi_beras
+      print('Stok beras baru:', stok_beras, 'kantong')
+  elif pilihan_barang == 2:
+    # Kurangi stok kopi
+    stok_awal_kopi = 4
+    kurangi_kopi = int(input('Kurangi berapa sachets kopi? '))
+    if kurangi_kopi > stok_awal_kopi:
+      print('Stok kopi tidak mencukupi!')
+    else:
+      stok_kopi = stok_awal_kopi - kurangi_kopi
+      print('Stok kopi baru:', stok_kopi, 'sachets')
+  elif pilihan_barang == 3:
+    # Kurangi stok kecap
+    stok_awal_kecap = 3
+    kurangi_kecap = int(input('Kurangi berapa botol kecap? '))
+    if kurangi_kecap > stok_awal_kecap:
+      print('Stok kecap tidak mencukupi!')
+    else:
+      stok_kecap = stok_awal_kecap - kurangi_kecap
+      print('Stok kecap baru:', stok_kecap, 'botol')
+  else:
+    print('Pilihan barang tidak valid!')
+
+elif pilihan1 == 3:
+  # Menu Penjualan Barang
+  print('Menu Penjualan Barang')
+  pilihan_barang = int(input('Pilih barang: (1: Beras, 2: Kopi, 3: Kecap) '))
+  if pilihan_barang == 1:
+    # Penjualan beras
+    harga_beras = 5000
+    stok_awal_beras = 5
+    jumlah_beli_beras = int(input('Jumlah beras yang dibeli (kantong): '))
+    if jumlah_beli_beras > stok_awal_beras:
+      print('Stok beras tidak mencukupi!')
+    else:
+      total_harga_beras = harga_ber
